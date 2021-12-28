@@ -1,0 +1,39 @@
+ var timer1 = new Stopwatch();                                                  
+            timer1.Start();
+
+            Parallel.For(1, 3, Arr);
+
+            timer1.Stop();
+            TimeSpan timeTaken1 = timer1.Elapsed;
+            string foo1 = "Time taken: " + timeTaken1.ToString(@"m\:ss\.fff");
+            Console.WriteLine(foo1);
+
+            var timer2 = new Stopwatch();                                                    
+            timer2.Start();
+
+            ParallelLoopResult result = Parallel.ForEach<int>(new List<int>() { 1, 2 },
+                Arr);
+
+            timer2.Stop();
+            TimeSpan timeTaken2 = timer2.Elapsed;
+            string foo2 = "Time taken: " + timeTaken2.ToString(@"m\:ss\.fff");
+            Console.WriteLine(foo2);
+
+            var timer3 = new Stopwatch();                                                       
+            timer3.Start();
+
+            int[] array1 = new int[100000];
+            int[] array2 = new int[100000];
+            Random rand1 = new Random();
+            Random rand2 = new Random();
+            for (int i = 0; i < array1.Length; i++)
+                array1[i] = rand1.Next(); // [0 - 2^31)
+            Console.WriteLine($"Массив №1 сформирован");
+            for (int i = 0; i < array1.Length; i++)
+                array1[i] = rand2.Next(); // [0 - 2^31)
+            Console.WriteLine($"Массив №2 сформирован");
+
+            timer3.Stop();
+            TimeSpan timeTaken3 = timer3.Elapsed;
+            string foo3 = "Time taken: " + timeTaken3.ToString(@"m\:ss\.fff");
+            Console.WriteLine(foo3);

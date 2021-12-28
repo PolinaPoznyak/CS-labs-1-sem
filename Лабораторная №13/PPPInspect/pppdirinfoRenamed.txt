@@ -1,0 +1,39 @@
+Информация о диске: 
+Папки: 
+D:\!Администрирование ИС
+D:\$RECYCLE.BIN
+D:\abSmoke
+D:\Git
+D:\Mathcad
+D:\MS
+D:\My
+D:\No
+D:\OC
+D:\OC2
+D:\openserver
+D:\Photo
+D:\Soft
+D:\System Volume Information
+D:\Test
+D:\VB
+D:\Wallpaper
+D:\АЛОЦВМ
+D:\Английский язык
+D:\Дизайн
+D:\Дизайн и юзабилити интерфейсов пользователя
+D:\Документы
+D:\ИГиГ
+D:\Книги
+D:\Компьютерные сети
+D:\Курсач
+D:\Математика
+D:\ОАиП
+D:\ОИТ
+D:\ООП
+D:\Презентации
+D:\Прога
+D:\Системы управления контентом
+D:\Физика
+Файлы: 
+D:\DumpStack.log
+D:\DumpStack.log.tmp
